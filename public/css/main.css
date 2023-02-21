@@ -1,0 +1,369 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: BigNoodleTitling;
+    src: url('../fonts/BigNoodleTitling/big_noodle_titling.ttf') format('truetype');
+}
+
+*{
+    font-family: Roboto, sans-serif;
+}
+
+html, body{
+    background-color: black;
+}
+
+img{
+    object-fit: cover;
+}
+
+section{
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+section div{
+    z-index: 10;
+}
+
+tbody th{
+    font-weight: normal;
+}
+
+.modal-open{
+    padding-right: 0 !important;
+}
+
+.bigNoodleTitling{
+    font-family: BigNoodleTitling, sans-serif;
+}
+
+
+.navbar-brand{
+    background-color: white;
+    border-radius: 50%;
+    padding: .5rem 1rem 1rem 1rem;
+}
+
+.navbar-toggler{
+    color: #2e2a76;
+    border-color: #2e2a76;
+}
+
+.navbar-toggler:focus{
+    outline: 5px auto #2e2a76;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(46, 42, 118, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link{
+    color: #2e2a76;
+}
+
+.nav-item{
+    border-bottom: 3px solid transparent;
+}
+
+.navigation .nav-item:hover{
+    border-bottom: 3px solid #2e2a76;
+}
+
+.navigation a:hover{
+    color: #2e2a76;
+}
+
+.navigation{
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    margin-right: 0 !important;
+}
+
+.logo{
+    width: 8rem;
+}
+
+.text-purple{
+    color: #2e2a76;
+}
+
+.bg-purple{
+    background-color: #2e2a76;
+}
+
+.banner{
+    height: 100vh;
+}
+
+.banner img{
+    object-position: 0 0;
+}
+
+.gradient-arrow-right{
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 50%);
+}
+
+.gradient-arrow-left{
+    clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 15% 100%, 0% 50%);
+}
+
+.btn-animated{
+    color: white;
+    background-color: #2e2a76;
+    border: 3px solid #2e2a76;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+.btn-animated:hover{
+    color: #2e2a76;
+    background-color: white;
+}
+
+.btn-animated-reversed{
+    color: #2e2a76;
+    background-color: white;
+    border: 3px solid white;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+.btn-animated-reversed:hover{
+    color: white;
+    background-color: #2e2a76;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+#map{
+    border: 0;
+}
+
+.background-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.layer{
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .3;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ticket{
+    clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.ticket-spacer{
+    padding: 6rem 2rem;
+}
+
+.silver{
+    background-image: url("../images/silver.jpg");
+    background-size: cover;
+}
+
+.gold{
+    background-image: url("../images/gold.jpg");
+    background-size: cover;
+}
+
+.payment-gateway-modal{
+    background-color: black;
+    border: 3px solid white;
+}
+
+.payment-gateway-modal .container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.close-modal{
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.modal-header, .modal-footer{
+    border: none;
+}
+
+.close-modal:hover{
+    color: #2e2a76 !important;
+}
+
+.stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.stepper-item::before{
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid white;
+    width: 50%;
+    top: 20px;
+    left: 0;
+    z-index: 2;
+    transition: .3s;
+}
+
+.stepper-item::after{
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid white;
+    width: 50%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+    transition: .3s;
+}
+
+.stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    margin-bottom: 6px;
+    transition: .3s;
+}
+
+.stepper-item.active .step-counter {
+    border: 3px solid #2e2a76;
+    color: #2e2a76;
+    font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+    background-color: #2e2a76;
+    color: white;
+}
+
+.stepper-item.completed::before, .stepper-item.completed::after, .stepper-item.active::before{
+    border-bottom: 3px solid #2e2a76;
+}
+
+.stepper-item:first-child::before, .stepper-item:last-child::after {
+    content: none;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    background-color: #2e2a76;
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 4rem;
+    height: 4rem;
+    transition: .3s;
+}
+
+.regularTicket{
+    color: white;
+    border: 3px solid white;
+}
+
+.vipTicket{
+    color: #CFB53B;
+    border: 3px solid #CFB53B;
+}
+
+.regularBtn{
+    color: white;
+    border: 3px solid white;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.regularBtn:hover{
+    color: black;
+    background-color: white;
+}
+
+.vipBtn{
+    color: #CFB53B;
+    border: 3px solid #CFB53B;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.vipBtn:hover{
+    color: black;
+    background-color: #CFB53B;
+}
+
+.ticketContainer .ticketTemplate:first-child .removeTicket{
+    display: none;
+}
+
+.drp-calendar{
+    width: 100%;
+}
+
+.drp-calendar.right {
+    display: none !important;
+}
+
+.socialMediaIcon{
+    background-color: #2e2a76;
+    border-radius: 50%;
+    transition: .3s;
+    width: 4.5rem;
+}
+
+.socialMediaIcon:hover{
+    background-color: white;
+}
+
+.contact-email{
+    border: 5px solid white;
+    background-color: #2e2a76;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.contact-email:hover{
+    border: 5px solid #2e2a76;
+    background-color: white;
+    color: #2e2a76;
+}
+
+.footer{
+    background-color: #2e2a76;
+}
+
+@media screen and (max-width: 992px) {
+    .navigation .nav-item {
+        width: fit-content;
+        margin-left: 50vw;
+        transform: translate(-50%, 0);
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+}
