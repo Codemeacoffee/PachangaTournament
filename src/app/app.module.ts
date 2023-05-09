@@ -8,6 +8,8 @@ import { SectionContainer } from './containers/section-container.component';
 import { NavbarComponent } from './navigation/navbar.component';
 import { PurpleArrowComponent } from './styling/arrows/purple-arrow/purple-arrow.component';
 import { WhiteArrowComponent } from './styling/arrows/white-arrow/white-arrow.component';
+import { GoogleMapsComponent } from './utils/google-maps.component';
+import { SafePipe } from './utils/pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { WhiteArrowComponent } from './styling/arrows/white-arrow/white-arrow.co
     BannerComponent,
     SectionContainer,
     PurpleArrowComponent,
-    WhiteArrowComponent
+    WhiteArrowComponent,
+    GoogleMapsComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
