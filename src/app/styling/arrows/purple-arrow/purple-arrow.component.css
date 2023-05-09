@@ -1,0 +1,11 @@
+.bg-purple{
+    background-color: #2e2a76;
+}
+
+.text-purple{
+    color: #2e2a76;
+}
+
+.gradient-arrow{
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 50%);
+}

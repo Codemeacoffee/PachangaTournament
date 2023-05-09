@@ -1,3 +1,22 @@
 <navbar></navbar>
 <banner></banner>
-<tournament></tournament>
+<section-container [section]="{id: 'tournament', name: 'El Torneo'}">
+    <div class="container-fluid">
+        <div class="row mb-4">
+            <div class="col-xl-7 col-lg-6 col-12 mb-lg-0 mb-5">
+                <h5 class="text-white">
+                    ¡En una ubicación de ensueño, <strong>Pachanga Tournament</strong> nos trae tres días repletos de <strong>Magic: The Gathering</strong> en un hotel a pie de playa!
+                </h5>
+                <h5 class="text-white mb-4">
+                   Disfruta de multitud de eventos, incluyendo los tres torneos principales:
+                </h5>
+                <purple-arrow title="Viernes 6 de Octubre" content="FNM de Pioner"></purple-arrow>
+                <white-arrow title="Sábado 7 de Octubre" content="Torneo de Modern"></white-arrow>
+                <purple-arrow title="Domingo 8 de Octubre" content="Torneo de Sellado"></purple-arrow>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-12">
+                <img class="w-100" alt="" src="assets/images/presentation.jpg">
+            </div>
+        </div>
+    </div>
+</section-container>
