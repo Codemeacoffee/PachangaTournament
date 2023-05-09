@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: Roboto;
+    src: url('assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: BigNoodleTitling;
+    src: url('assets/fonts/BigNoodleTitling/big_noodle_titling.ttf') format('truetype');
+}
+
+*{
+    font-family: Roboto, sans-serif;
+}
+
+html, body{
+    background-color: black;
+}
+
+img{
+    object-fit: cover;
+}
+
+.bigNoodleTitling{
+    font-family: BigNoodleTitling, sans-serif;
+}

@@ -1,0 +1,19 @@
+.tournament{
+    margin-bottom: 10rem;
+}
+
+.bg-purple{
+    background-color: #2e2a76;
+}
+
+.text-purple{
+    color: #2e2a76;
+}
+
+.gradient-arrow-right{
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 50%);
+}
+
+.gradient-arrow-left{
+    clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 15% 100%, 0% 50%);
+}

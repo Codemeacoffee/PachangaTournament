@@ -1,0 +1,18 @@
+.banner{
+    height: 100vh;
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+.banner img{
+    object-position: 0 0;
+}
+
+.layer{
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .3;
+    z-index: 1;
+    pointer-events: none;
+}
